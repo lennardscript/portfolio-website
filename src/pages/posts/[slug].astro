@@ -23,10 +23,14 @@ const { Content } = await post.render();
 <Layout title={post.data.title}>
   <main class="post mx-auto flex w-full max-w-prose flex-col gap-4">
     <header role="presentation">
-      <h1 class="text-md">
-        {post.data.title} - {formatDate(post.data.publishedAt)}
+      <h1 class="text-md text-gray-300 underline underline-offset-2 p-3">
+        {post.data.title}
       </h1>
-      <p class="italic">{post.data.description}</p>
+      <img class="" src={post.data.image} alt={post.data.title}>
+      <div class="flex justify-between">
+        <span class="italic p-3">{post.data.description}<span/>
+        <span class="italic pl-16">Publicado: {formatDate(post.data.publishedAt)}</span>
+      </div>
     </header>
 
     <Content />

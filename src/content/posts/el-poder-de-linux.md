@@ -1,6 +1,7 @@
 ---
-title: "El poder de Linux"
+title: "El poder de Linux 🐧💻"
 publishedAt: 2023-07-21
+image: '/linux.png'
 description: "Linux, el sistema operativo de código libre"
 slug: "el-poder-de-linux"
 isPublish: true
