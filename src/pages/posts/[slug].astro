@@ -29,7 +29,7 @@ const { Content } = await post.render();
       <img class="" src={post.data.image} alt={post.data.title}>
       <div class="flex justify-between">
         <span class="italic p-3">{post.data.description}<span/>
-        <span class="italic pl-16">Publicado: {formatDate(post.data.publishedAt)}</span>
+        <span class="italic pl-16">📆 {formatDate(post.data.publishedAt)}</span>
       </div>
     </header>
 
