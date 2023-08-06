@@ -10,6 +10,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import Footer from "@/components/Footer.astro";
 
 const posts = await getCollection("posts");
 ---
@@ -94,5 +95,6 @@ const posts = await getCollection("posts");
 
       <SocialLinks />
     </article>
+    <Footer />
   </main>
 </Layout>
