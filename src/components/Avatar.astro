@@ -1,0 +1,28 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import formatDate from "@/utils/formatDate";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+---
+
+<div class="flex items-center space-x-4 p-1 right-5">
+  <img class="w-10 h-10 rounded-full" src="/leandro.jpg" alt="Leandro Burgos Corvalán">
+  <div class="font-medium dark:text-white">
+      <span>Leandro Burgos Corvalán</span>
+      <p class="text-sm text-gray-500 dark:text-gray-400">{formatDate(post.data.publishedAt)}<p/>
+  </div>
+</div>
+<br />
