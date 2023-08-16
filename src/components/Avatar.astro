@@ -18,11 +18,13 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<div class="flex items-center space-x-4 p-1 right-5">
-    <img class="w-10 h-10 rounded-full" src="/leandro.jpg" alt="Leandro Burgos Corvalán" />
+<div class="flex items-center space-x-4 px-1 right-5">
+    <img class="w-16 h-16 rounded-full" src="/leandro.jpg" alt="Leandro Burgos Corvalán" />
     <div class="font-medium dark:text-white justify-center">
-      <span>Leandro Burgos Corvalán</span>
-      <p class="text-sm text-gray-500 dark:text-gray-400">{formatDate(post.data.publishedAt)}<p/>
+      <br />
+      <span class="font-bold">Leandro Burgos Corvalán</span>
+      <p class="text-sm dark:text-gray-400">Programador, Ingeniero en Informática</p>
+      <p class="text-sm dark:text-gray-400">{formatDate(post.data.publishedAt)}<p/>
   </div>
 </div>
 <br />
