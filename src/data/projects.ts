@@ -8,12 +8,17 @@ export type Project = {
 const projects: Project[] = [
   {
     title: "Mi segundo portafolio",
-    techs: ["ReactJS (NextJS)", "Tailwind CSS"],
+    techs: ["React (Next)", "Tailwind CSS"],
     link: "https://github.com/lennardscript/my-portfolio",
   },
   {
-    title: "Proyecto Android / Desarrollo de aplicaciones Android",
+    title: "Proyecto Android - Desarrollo de aplicaciones Android",
     techs: ["Kotlin"],
+    link: "https://github.com/lennardscript/DarkSoulsApp",
+  },
+  {
+    title: "Proyecto Capstone - ShopFleet",
+    techs: ["HTML5", "CSS3", "Tailwind CSS", "TypeScript", "Node.js", "React", "Nest.js", "PostgreSQL", "Docker"],
     link: "/",
     isComingSoon: true,
   },
