@@ -21,7 +21,7 @@ const presentation: Presentation = {
       link: "/",
     },
     {
-      label: "Github",
+      label: "GitHub",
       link: "https://github.com/lennardscript",
     },
   ],

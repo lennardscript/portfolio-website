@@ -18,7 +18,7 @@ const projects: Project[] = [
   },
   {
     title: "Proyecto Capstone - ShopFleet",
-    techs: ["HTML5", "CSS3", "Tailwind CSS", "TypeScript", "Node.js", "React", "Nest.js", "PostgreSQL", "Docker"],
+    techs: ["HTML5", "CSS3", "Tailwind CSS", "TypeScript", "Node.js", "React", "PHP", "Laravel", "PostgreSQL", "Docker"],
     link: "/",
     isComingSoon: true,
   },
